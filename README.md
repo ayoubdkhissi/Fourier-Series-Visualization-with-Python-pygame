@@ -1,4 +1,4 @@
-# Visualisation of Square, Triangle, and SawTooth waves using Fourier series whith pyhton & pygame
+# Visualisation of Square, Triangle, and SawTooth waves using Fourier series with pyhton & pygame
 
 
 # How to run the application
@@ -9,7 +9,7 @@
 (although first lines of code serve this purpose)
 - Choose the function to visualize
 - Press UP or Down key to increase or decrease number of iterations
-- As the number of iteration gets bigger, the function gets more and more accurate 
+- As the number of iteration gets bigger, the function representation gets more and more accurate 
 
 ### Ressources:
 - https://www.youtube.com/watch?v=r6sGWTCMz2k
