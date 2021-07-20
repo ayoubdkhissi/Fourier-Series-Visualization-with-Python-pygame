@@ -1,3 +1,5 @@
+import subprocess
+import get_pip
 import sys
 import os
 import time
