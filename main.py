@@ -378,11 +378,5 @@ while run:
 
 
 
-
-
-
-
-
 pygame.quit()
 
-##Comment
