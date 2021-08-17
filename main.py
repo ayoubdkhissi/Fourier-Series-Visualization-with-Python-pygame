@@ -4,37 +4,8 @@ import os
 import time
 import random
 import math
+import pygame
 #import pygame
-
-# Installing pygame if it's not insstaled
-def install(package):
-    subprocess.call([sys.executable, "-m", "pip", "install", package])
-
-try:
-    print("[GAME] Trying to import pygame")
-    import pygame
-except:
-    print("[EXCEPTION] Pygame not installed")
-
-    try:
-        print("[GAME] Trying to install pygame via pip")
-        import pip
-        install("pygame")
-        print("[GAME] Pygame has been installed")
-    except:
-        print("[EXCEPTION] Pip not installed on system")
-        print("[GAME] Trying to install pip")
-        get_pip.main()
-        print("[GAME] Pip has been installed")
-        try:
-            print("[GAME] Trying to install pygame")
-            import pip
-            install("pygame")
-            print("[GAME] Pygame has been installed")
-        except:
-            print("[ERROR 1] Pygame could not be installed")
-
-    import pygame
 
 # Center the window the best it can
 os.environ["SDL_VIDEO_CENTERED"]='1'
@@ -45,14 +16,14 @@ clock = pygame.time.Clock()
 width,height = 1300, 700 
 fps= 60
 pygame.display.set_caption("Fourier Series Visualization!")
-icon = pygame.image.load("icon.png")
+icon = pygame.image.load("res/icon.png")
 pygame.display.set_icon(icon)
 screen = pygame.display.set_mode((width,height))
 
 # Fonts
-big_font = pygame.font.Font("myfont.ttf", 50)
-small_font = pygame.font.Font("myfont.ttf", 20)
-medium_font = pygame.font.Font("myfont.ttf", 35)
+big_font = pygame.font.Font("res/myfont.ttf", 50)
+small_font = pygame.font.Font("res/myfont.ttf", 20)
+medium_font = pygame.font.Font("res/myfont.ttf", 35)
 copy_right_font = pygame.font.SysFont("arials.ttf", 20)
 
 
@@ -276,9 +247,9 @@ def sawTooth():
 
 
 # IMAGES
-img_square = pygame.image.load("square.png")
-img_triangle = pygame.image.load("triangle.png")
-img_sawtooth = pygame.image.load("sawtooth.png")
+img_square = pygame.image.load("res/square.png")
+img_triangle = pygame.image.load("res/triangle.png")
+img_sawtooth = pygame.image.load("res/sawtooth.png")
 
 
 # Square button properties
@@ -305,9 +276,9 @@ sawTooth_button_height = 180
 button_sawTooth = pygame.Rect(sawTooth_button_x, sawTooth_button_y, sawTooth_button_width, sawTooth_button_height)
 
 # Sound effects
-click_SE = pygame.mixer.Sound('click1.wav')
-tin_SE = pygame.mixer.Sound('tin.wav')
-whoosh_SE = pygame.mixer.Sound('whoosh.wav')
+click_SE = pygame.mixer.Sound('res/click1.wav')
+tin_SE = pygame.mixer.Sound('res/tin.wav')
+whoosh_SE = pygame.mixer.Sound('res/whoosh.wav')
 
 
 
