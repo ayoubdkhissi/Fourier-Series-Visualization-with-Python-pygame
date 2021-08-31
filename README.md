@@ -4,8 +4,8 @@
 ### How to run the application
 - Download or clone the whole repository
 - Make sure you have python3 installed
-- Run the main.py file using python IDE or any text editor
 - install pygame using the followin commande: "pip install pygame" 
+- Run the main.py file using python IDE or any text editor
 
 
  After running the app:
