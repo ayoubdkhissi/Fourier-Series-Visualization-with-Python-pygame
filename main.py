@@ -33,7 +33,7 @@ black = (0, 0, 0)
 navy = (0,0,128)
 green = (32,178,170)
 navy2 = (0,0,139)
-screen.fill(white)	
+
 
 # Function to draw text on screen
 def draw_text(text, font, color, surface, x, y):
@@ -281,6 +281,7 @@ tin_SE = pygame.mixer.Sound('res/tin.wav')
 whoosh_SE = pygame.mixer.Sound('res/whoosh.wav')
 
 
+screen.fill(white)	
 
 # Main Game Loop
 run=True
