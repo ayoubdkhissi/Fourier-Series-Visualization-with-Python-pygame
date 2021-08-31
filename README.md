@@ -3,7 +3,7 @@
 
 ### How to run the application
 - Download or clone the whole repository
-- Make sure you have python3 installed
+- Make sure you have [python3] installed
 - install pygame using the followin commande: "pip install pygame" 
 - Run the main.py file using python IDE or any text editor
 
@@ -33,3 +33,6 @@
 #### Square wave:
 ![square](https://user-images.githubusercontent.com/73041562/126204755-0cf9e71e-b108-4cef-8707-835234f1a485.gif)
 
+
+
+[python3] : https://www.python.org/downloads/
