@@ -5,7 +5,6 @@ import time
 import random
 import math
 import pygame
-#import pygame
 
 # Center the window the best it can
 os.environ["SDL_VIDEO_CENTERED"]='1'
