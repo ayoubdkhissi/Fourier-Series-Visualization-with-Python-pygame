@@ -8,15 +8,16 @@ import pygame
 # Center the window the best it can
 os.environ["SDL_VIDEO_CENTERED"]='1'
 
-# pygame configurations
+# pygame Initialization
 pygame.init()
 clock = pygame.time.Clock()
 width,height = 1300, 700 
-fps= 60
+fps = 60
+screen = pygame.display.set_mode((width,height))
 pygame.display.set_caption("Fourier Series Visualization!")
 icon = pygame.image.load("res/icon.png")
 pygame.display.set_icon(icon)
-screen = pygame.display.set_mode((width,height))
+
 
 # Fonts
 big_font = pygame.font.Font("res/myfont.ttf", 50)
