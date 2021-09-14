@@ -18,12 +18,21 @@ pygame.display.set_caption("Fourier Series Visualization!")
 icon = pygame.image.load("res/icon.png")
 pygame.display.set_icon(icon)
 
+# IMAGES
+img_square = pygame.image.load("res/square.png")
+img_triangle = pygame.image.load("res/triangle.png")
+img_sawtooth = pygame.image.load("res/sawtooth.png")
 
 # Fonts
 big_font = pygame.font.Font("res/myfont.ttf", 50)
 small_font = pygame.font.Font("res/myfont.ttf", 20)
 medium_font = pygame.font.Font("res/myfont.ttf", 35)
 copy_right_font = pygame.font.SysFont("arials.ttf", 20)
+
+# Sound effects
+click_SE = pygame.mixer.Sound('res/click.wav')
+tin_SE = pygame.mixer.Sound('res/tin.wav')
+whoosh_SE = pygame.mixer.Sound('res/whoosh.wav')
 
 
 # colors
@@ -40,7 +49,6 @@ def draw_text(text, font, color, surface, x, y):
     textrect = textobj.get_rect()
     textrect.topleft = (x, y)
     surface.blit(textobj, textrect)
-
 
 
 # loop of square wave
@@ -245,19 +253,12 @@ def sawTooth():
 	    pygame.display.update()
 
 
-# IMAGES
-img_square = pygame.image.load("res/square.png")
-img_triangle = pygame.image.load("res/triangle.png")
-img_sawtooth = pygame.image.load("res/sawtooth.png")
-
 
 # Square button properties
 square_button_x = 200
 square_button_y = 200
 square_button_width = 300
 square_button_height = 180
-
-
 button_square = pygame.Rect(square_button_x, square_button_y, square_button_width, square_button_height)
 
 # Triangle button properties
@@ -274,10 +275,7 @@ sawTooth_button_width = 300
 sawTooth_button_height = 180
 button_sawTooth = pygame.Rect(sawTooth_button_x, sawTooth_button_y, sawTooth_button_width, sawTooth_button_height)
 
-# Sound effects
-click_SE = pygame.mixer.Sound('res/click1.wav')
-tin_SE = pygame.mixer.Sound('res/tin.wav')
-whoosh_SE = pygame.mixer.Sound('res/whoosh.wav')
+
 
 
 screen.fill(white)	
@@ -310,12 +308,10 @@ while run:
     screen.blit(img_sawtooth, (sawTooth_button_x, sawTooth_button_y))
 
 
-
-    # Handling events
-
     # Get mouse position:
     mouse_x, mouse_y = pygame.mouse.get_pos()
 
+    # Handling events
     click = False
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
