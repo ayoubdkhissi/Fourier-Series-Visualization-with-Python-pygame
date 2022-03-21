@@ -13,6 +13,9 @@
 - Press UP or Down key to increase or decrease number of iterations
 - As the number of iterations gets bigger, the function's representation gets more and more accurate 
 
+### Project Report(Fr):
+https://drive.google.com/file/d/1QmS5ccyOU0uygIjBe1uzRX0w3vahNDt_/view?usp=sharing
+
 ### Ressources:
 - https://www.youtube.com/watch?v=r6sGWTCMz2k
 - https://en.wikipedia.org/wiki/Fourier_series
