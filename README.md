@@ -13,7 +13,7 @@
 - Press UP or Down key to increase or decrease number of iterations
 - As the number of iterations gets bigger, the function's representation gets more and more accurate 
 
-### Project Report explaining everything in details(but in Frensh ☹ ):
+### Project Report explaining everything in details(but in French ☹ ):
 https://drive.google.com/file/d/1QmS5ccyOU0uygIjBe1uzRX0w3vahNDt_/view?usp=sharing
 
 ### Ressources:
